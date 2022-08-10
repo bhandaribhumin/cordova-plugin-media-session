@@ -26,9 +26,9 @@ import android.graphics.Color;
 import android.net.Uri;
 
 import android.app.NotificationChannel;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.media.app.NotificationCompat.MediaStyle;
+import androidx.core.app.NotificationCompat;
+import androidx.core.content.ContextCompat;
+import androidx.core.app.NotificationCompat.MediaStyle;
 
 public class MediaSessionNotification {
   private Activity cordovaActivity;
@@ -292,7 +292,7 @@ public class MediaSessionNotification {
       for (int i = 0; i < nbControls; ++i) {
         args[i] = i;
       }
-      builder.setStyle(new android.support.v4.media.app.NotificationCompat.MediaStyle().setShowActionsInCompactView(args).setMediaSession(musicControls.mediaSessionCompat.getSessionToken()));
+      builder.setStyle(new androidx.core.app.NotificationCompat.MediaStyle().setShowActionsInCompactView(args).setMediaSession(musicControls.mediaSessionCompat.getSessionToken()));
     }
     this.notificationBuilder = builder;
   }

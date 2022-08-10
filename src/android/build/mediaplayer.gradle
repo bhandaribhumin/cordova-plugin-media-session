@@ -1,0 +1,12 @@
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        url "https://maven.google.com"
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core:1.0.2'
+    implementation 'androidx.media:media:1.0.1'
+}

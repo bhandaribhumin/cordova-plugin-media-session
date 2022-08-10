@@ -35,6 +35,8 @@
 			<service android:stopWithTask="true" android:name="com.timetravelers.hackedme.MediaSessionNotificationKiller" android:foregroundServiceType="mediaPlayback"></service>
 		</config-file>
 
+		 <framework src="src/android/build/mediaplayer.gradle" custom="true" type="gradleReference"/>
+
 		<source-file src="src/android/MediaSession.java" target-dir="src/com/timetravelers/hackedme" />
 		<source-file src="src/android/MediaSessionCallback.java" target-dir="src/com/timetravelers/hackedme" />
     <source-file src="src/android/MediaSessionBroadcastReceiver.java" target-dir="src/com/timetravelers/hackedme" />
