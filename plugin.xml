@@ -32,7 +32,7 @@
 		</config-file>
 
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
-			<service android:name="com.timetravelers.hackedme.MediaSessionNotificationKiller"></service>
+			<service android:stopWithTask="true" android:name="com.timetravelers.hackedme.MediaSessionNotificationKiller" android:foregroundServiceType="mediaPlayback"></service>
 		</config-file>
 
 		<source-file src="src/android/MediaSession.java" target-dir="src/com/timetravelers/hackedme" />
